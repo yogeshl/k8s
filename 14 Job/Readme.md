@@ -1,17 +1,17 @@
-Create the job
+## Create the job
     kubectl apply -f job.yaml
 
-Get hte job list
+## Get hte job list
     kubectl get jobs
 
-Get more info
+## Get more info
     kubectl describe job
 
-Get the pod name
+## Get the pod name
     kubectl get pods
 
-Get the log
+## Get the log
     kubectl logs <podName>
 
-Cleanup
+## Cleanup
     kubectl delete -f job.yaml

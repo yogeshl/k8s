@@ -1,21 +1,21 @@
-Create the deployment
+## Create the deployment
     kubectl apply -f deploy-example.yaml
 
-Get the pods
+## Get the pods
     kubectl get pods -o wide
 
-Describe the pod
+## Describe the pod
     kubectl describe pod deploy-example
 
-Get the deployment info
+## Get the deployment info
     kubectl get deploy
     kubectl describe deploy deploy-example
 
-Get the replicaset name
+## Get the replicaset name
     kubectl get rs
 
-Describe rs
+## Describe rs
     kubectl describe rs
 
-Cleanup
+## Cleanup
     kubectl delete -f deploy-example.yaml

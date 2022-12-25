@@ -1,16 +1,15 @@
-Build the app
+## Build the app
     docker compose build
 
-Run the app
+## Run the app
     docker compose up -d
 
-List the containers
+## List the containers
     docker compose ls
 
-Look at the backedn container logs
+## Look at the backedn container logs
     docker compose logs -f backend
 
 
-Stop the app
+## Stop the app
     docker compose down
-

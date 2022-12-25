@@ -1,17 +1,17 @@
-Deploy the app
+## Deploy the app
     kubectl apply -f deploy-app.yaml
 
-Deploy the service
+## Deploy the service
     kubectl apply -f nodeport.yaml
 
-Get the pods list
+## Get the pods list
     kubectl get pods -o wide
 
-Use the nodeport
+# Use the nodeport
 
-Get the node public ip address
+## Get the node public ip address
     kubectl get nodes -o wide
 
-Cleanup
+## Cleanup
     kubectl delete -f nodeport.yaml
     kubectl delete -f deploy-app.yaml

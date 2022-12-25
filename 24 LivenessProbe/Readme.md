@@ -1,8 +1,8 @@
-Deploy the pod
+## Deploy the pod
     kubectl apply -f pod.yaml
 
-Look at the pod events
+## Look at the pod events
     kubectl describe pod liveness-example
 
-Cleanup
+## Cleanup
     kubectl delete -f pod.yaml --force --grace-period=0

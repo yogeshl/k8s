@@ -1,11 +1,9 @@
-Imperative
+## Imperative
     kubectl create deployment mynginx1 --image=nginx
 
-Declarative
+## Declarative
     kubectl create -f deploy-example.yaml
 
-Cleanup
-   kubectl delete deployment mynginx1
-   kubectl delete deploy mynginx2
-
- 
+## Cleanup
+    kubectl delete deployment mynginx1
+    kubectl delete deploy mynginx2

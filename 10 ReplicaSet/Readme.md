@@ -1,14 +1,14 @@
-Create replicaset
+## Create replicaset
     kubectl apply -f rs-example.yaml
 
-Get the pods list
+## Get the pods list
     kubectl get pods -o wide
 
-Get the replica set name
+## Get the replica set name
     kubectl get rs
 
-Describe
+## Describe
     kubectl describe rs rs-example
 
-Cleanup
+## Cleanup
     kubectl delete -f rs-example.yaml

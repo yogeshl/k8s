@@ -1,46 +1,43 @@
-Create the pod
+## Create the pod
     kubectl run mynginx --image=nginx
 
-List pods
+## List pods
     kuectrl get pods
 
-Get more info
+## Get more info
     kubectl get pods -o wide
     kubectl describe pod mynginx
 
-Delete the pod
+## Delete the pod
     kubectl delete pod mynginx
 
-Create a pod runnning Busybox
+## Create a pod runnning Busybox
     kubectl run mybox --image=busybox -it -- /bin/sh
 
-List the folder and use command
+## List the folder and use command
     ls
     echo -n 'A Secret' | base64
     exit
 
-Cleanup
+## Cleanup
     kubectl delete pod mybox --wait=false
     kubectl delete pod mybox --grace-period=0 --force
 
 
-Declarative way
+# Declarative way
 
-Creat pod
+## Creat pod
     kubectl create -f myapp.yaml
 
-Get some info
+## Get some info
     kubectl get pods -o wide
     kubectl describe pod myapp-pod
 
-Attach our terminal
+## Attach our terminal
     kubectl exec -it myapp-pod -- bash
 
-Print
+## Print
     echo $DBCON
 
-Cleanup
+## Cleanup
     kubectl delete -f myapp.yaml
-
- 
-

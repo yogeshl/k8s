@@ -1,24 +1,24 @@
-Deploy the service
+## Deploy the service
     kubectl apply -f clusterip.yaml
 
-Deploy the app
+## Deploy the app
     kubectl apply -f deploy-app.yaml
 
-Deploy busybox
+## Deploy busybox
     kubectl apply -f pod.yaml
 
-Get the pods list
+## Get the pods list
     kubectl get pods -o wide
 
-Connect to the BusyBox Container
+## Connect to the BusyBox Container
     kubectl exec mybox -it -- /bin/sh
 
-Get the Nginx home page thru the clusterip service
+## Get the Nginx home page thru the clusterip service
     wget -qO http://svc-example:8080
     exit
 
 
-Cleanup
+## Cleanup
     kubectl delete -f clusterip.yaml
     kubectl delete -f deploy-app.yaml
     kubectl delete -f pod.yaml

@@ -1,8 +1,8 @@
-Create the deployment
+## Create the deployment
     kubectl apply -f daemonset.yaml
 
-Pods
+## Pods
     kubectl get pods --selector=app=daemonset-example -o wide
 
-Cleanup
+## Cleanup
     kubectl delete -f daemonset.yaml

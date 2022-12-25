@@ -1,17 +1,15 @@
-Get namespaces
+## Get namespaces
     kubectl get namespaces
     kubectl get ns
 
-Get the pod list
+## Get the pods
     kubectl get pods
-    kubectl get pods --namespace=kube-system
-    kubectl get pods -n kube-system
+    kubectl get pods --namespace=<name>
+    kubectl get pods -n <name>
 
-Change namespace
-    kubectl config set-context --current --namespace=kube-system
+## Change namespace
+    kubectl config set-context --current --namespace=<name>
 
-Create and delete a namespace
-    kubectl create ns [name]
-    kubectl delete ns [name]
-
-
+## Create and delete a namespace
+    kubectl create ns <name>
+    kubectl delete ns <name>

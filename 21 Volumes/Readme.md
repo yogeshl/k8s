@@ -1,25 +1,25 @@
-Create the Persistent volume
+## Create the Persistent volume
     kubectl apply -f pv.yaml
 
-Look at the pv
+## Look at the pv
     kubectl get pv
 
-Deploy the claim
+## Deploy the claim
     kubectl apply -f pvc.yaml
 
-Look at the pvc
+## Look at the pvc
     kubectl get pvc
 
-Deploy the pod
+## Deploy the pod
     kubectl apply -f pod.yaml
 
-Connect to the busybox instance
+## Connect to the busybox instance
     kubectl exec mybox -it -- /bin/sh
 
-Check demo folder is there
+## Check demo folder is there
     ls
 
-Create a file
+## Create a file
     cd demo
     cat > hello.txt
     Hello World
@@ -27,16 +27,16 @@ Create a file
     ls
     exit
 
-Delete the pod
+## Delete the pod
     kubectl delete -f pod.yaml --force --grace-period=0
 
-Deploy the pod again
+## Deploy the pod again
     kubectl apply -f pod.yaml
 
-Connect to the busybox instance and verify file exists inside demo folder
+## Connect to the busybox instance and verify file exists inside demo folder
     kubectl exec mybox -it -- /bin/sh
 
-Cleanup
+## Cleanup
     kubectl delete -f pod.yaml --force --grace-period=0
     kubectl delete -f pvc.yaml
     kubectl delete -f pv.yaml

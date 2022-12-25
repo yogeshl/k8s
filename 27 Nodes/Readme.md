@@ -1,6 +1,5 @@
-Get nodes information
+## Get nodes list
     kubectl get nodes
 
-Info about the node
-    kubectl describe node
-
+## Detailed Info about the node
+    kubectl describe node <name>
